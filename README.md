@@ -74,6 +74,7 @@ This repository contains **VSCode snippets** to speed up development in JavaScri
 | `click` | `await page.locator('selector').click();` | Click an element |
 | `fill` | `await page.locator('selector').fill('value');` | Fill input with a value |
 | `expect` | `await expect(page.locator('selector')).toHaveText('expected');` | Assert element has expected text |
+| `tsp` | `test('should do something', async ({ page }) => { });` | Creates a Playwright test with page destructured |
 
 ---
 

@@ -24,7 +24,6 @@
         "prefix": "con",
         "body": [
             "constructor() {",
-            "  ${1:// code here}",
             "}"
         ],
         "description": "Adds default constructor in the class"
@@ -33,7 +32,6 @@
         "prefix": "met",
         "body": [
             "${1:methodName}() {",
-            "  ${2:// code here}",
             "}"
         ],
         "description": "Creates a method inside a class"
@@ -72,7 +70,6 @@
         "prefix": "fre",
         "body": [
             "${1:array}.forEach(${2:currentItem} => {",
-            "  ${3:// code here}",
             "});"
         ],
         "description": "forEach loop in ES6 syntax"
@@ -81,7 +78,6 @@
         "prefix": "fof",
         "body": [
             "for(const ${1:item} of ${2:object}) {",
-            "  ${3:// code here}",
             "}"
         ],
         "description": "for...of loop"
@@ -90,7 +86,6 @@
         "prefix": "fin",
         "body": [
             "for(const ${1:item} in ${2:object}) {",
-            "  ${3:// code here}",
             "}"
         ],
         "description": "for...in loop"
@@ -99,7 +94,6 @@
         "prefix": "anfn",
         "body": [
             "(${1:params}) => {",
-            "  ${2:// code here}",
             "}"
         ],
         "description": "Creates an anonymous function"
@@ -108,7 +102,6 @@
         "prefix": "nfn",
         "body": [
             "const ${1:functionName} = (${2:params}) => {",
-            "  ${3:// code here}",
             "};"
         ],
         "description": "Creates a named function"
@@ -131,7 +124,6 @@
         "prefix": "sti",
         "body": [
             "setInterval(() => {",
-            "  ${1:// code here}",
             "}, ${2:1000});"
         ],
         "description": "Set interval helper method"
@@ -140,7 +132,6 @@
         "prefix": "sto",
         "body": [
             "setTimeout(() => {",
-            "  ${1:// code here}",
             "}, ${2:1000});"
         ],
         "description": "Set timeout helper method"
@@ -149,7 +140,6 @@
         "prefix": "prom",
         "body": [
             "return new Promise((resolve, reject) => {",
-            "  ${1:// code here}",
             "});"
         ],
         "description": "Creates a new Promise"
@@ -158,9 +148,7 @@
         "prefix": "thenc",
         "body": [
             ".then(${1:res} => {",
-            "  ${2:// code here}",
             "}).catch(${3:err} => {",
-            "  ${4:// error handling}",
             "});"
         ],
         "description": "Adds then and catch to a Promise"
@@ -169,7 +157,6 @@
         "prefix": "desc",
         "body": [
             "describe('${1:description}', () => {",
-            "  ${2:// tests here}",
             "});"
         ],
         "description": "Creates a describe block"
@@ -178,7 +165,6 @@
         "prefix": "test",
         "body": [
             "it('${1:should do something}', () => {",
-            "  ${2:// test code here}",
             "});"
         ],
         "description": "Creates an individual test block"
@@ -187,7 +173,6 @@
         "prefix": "beforeeach",
         "body": [
             "beforeEach(() => {",
-            "  ${1:// setup code here}",
             "});"
         ],
         "description": "Setup code before each test"
@@ -196,7 +181,6 @@
         "prefix": "aftereach",
         "body": [
             "afterEach(() => {",
-            "  ${1:// teardown code here}",
             "});"
         ],
         "description": "Teardown code after each test"
@@ -205,7 +189,6 @@
         "prefix": "beforeall",
         "body": [
             "beforeAll(() => {",
-            "  ${1:// setup code before all tests}",
             "});"
         ],
         "description": "Setup code before all tests"
@@ -214,7 +197,6 @@
         "prefix": "afterall",
         "body": [
             "afterAll(() => {",
-            "  ${1:// teardown code after all tests}",
             "});"
         ],
         "description": "Teardown code after all tests"
@@ -253,5 +235,13 @@
             "await expect(page.locator('${1:selector}')).toHaveText('${2:expected}');"
         ],
         "description": "Asserts that element has expected text"
+    },
+    "Playwright test with destructured page": {
+        "prefix": "tsp",
+        "body": [
+            "test('${1:should do something}', async ({ page }) => {",
+            "});"
+        ],
+        "description": "Creates a Playwright test with page destructured"
     }
 }
