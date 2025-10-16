@@ -1,0 +1,257 @@
+{
+    "Import entire module": {
+        "prefix": "imp",
+        "body": [
+            "import ${1:fs} from '${1:fs}';"
+        ],
+        "description": "Imports entire module"
+    },
+    "Import portion of module using destructuring": {
+        "prefix": "imd",
+        "body": [
+            "import { ${1:rename} } from '${2:fs}';"
+        ],
+        "description": "Imports only a portion of the module"
+    },
+    "Export name variable": {
+        "prefix": "env",
+        "body": [
+            "export const ${1:nameVariable} = ${2:localVariable};"
+        ],
+        "description": "Exports a named variable"
+    },
+    "Default constructor": {
+        "prefix": "con",
+        "body": [
+            "constructor() {",
+            "  ${1:// code here}",
+            "}"
+        ],
+        "description": "Adds default constructor in the class"
+    },
+    "Create method inside class": {
+        "prefix": "met",
+        "body": [
+            "${1:methodName}() {",
+            "  ${2:// code here}",
+            "}"
+        ],
+        "description": "Creates a method inside a class"
+    },
+    "Getter property": {
+        "prefix": "pge",
+        "body": [
+            "get ${1:propertyName}() {",
+            "  return ${2:value};",
+            "}"
+        ],
+        "description": "Creates a getter property"
+    },
+    "Console log": {
+        "prefix": "clg",
+        "body": [
+            "console.log(${1:object});"
+        ],
+        "description": "console log"
+    },
+    "Console log with object name": {
+        "prefix": "clo",
+        "body": [
+            "console.log('${1:object} :>> ', ${1:object});"
+        ],
+        "description": "console log object with name"
+    },
+    "Console error": {
+        "prefix": "cer",
+        "body": [
+            "console.error(${1:object});"
+        ],
+        "description": "console error"
+    },
+    "forEach loop": {
+        "prefix": "fre",
+        "body": [
+            "${1:array}.forEach(${2:currentItem} => {",
+            "  ${3:// code here}",
+            "});"
+        ],
+        "description": "forEach loop in ES6 syntax"
+    },
+    "for...of loop": {
+        "prefix": "fof",
+        "body": [
+            "for(const ${1:item} of ${2:object}) {",
+            "  ${3:// code here}",
+            "}"
+        ],
+        "description": "for...of loop"
+    },
+    "for...in loop": {
+        "prefix": "fin",
+        "body": [
+            "for(const ${1:item} in ${2:object}) {",
+            "  ${3:// code here}",
+            "}"
+        ],
+        "description": "for...in loop"
+    },
+    "Anonymous function": {
+        "prefix": "anfn",
+        "body": [
+            "(${1:params}) => {",
+            "  ${2:// code here}",
+            "}"
+        ],
+        "description": "Creates an anonymous function"
+    },
+    "Named function": {
+        "prefix": "nfn",
+        "body": [
+            "const ${1:functionName} = (${2:params}) => {",
+            "  ${3:// code here}",
+            "};"
+        ],
+        "description": "Creates a named function"
+    },
+    "Destructuring object": {
+        "prefix": "dob",
+        "body": [
+            "const { ${1:rename} } = ${2:object};"
+        ],
+        "description": "Destructuring object syntax"
+    },
+    "Destructuring array": {
+        "prefix": "dar",
+        "body": [
+            "const [${1:first}, ${2:second}] = ${3:array};"
+        ],
+        "description": "Destructuring array syntax"
+    },
+    "Set interval": {
+        "prefix": "sti",
+        "body": [
+            "setInterval(() => {",
+            "  ${1:// code here}",
+            "}, ${2:1000});"
+        ],
+        "description": "Set interval helper method"
+    },
+    "Set timeout": {
+        "prefix": "sto",
+        "body": [
+            "setTimeout(() => {",
+            "  ${1:// code here}",
+            "}, ${2:1000});"
+        ],
+        "description": "Set timeout helper method"
+    },
+    "New Promise": {
+        "prefix": "prom",
+        "body": [
+            "return new Promise((resolve, reject) => {",
+            "  ${1:// code here}",
+            "});"
+        ],
+        "description": "Creates a new Promise"
+    },
+    "Promise then/catch": {
+        "prefix": "thenc",
+        "body": [
+            ".then(${1:res} => {",
+            "  ${2:// code here}",
+            "}).catch(${3:err} => {",
+            "  ${4:// error handling}",
+            "});"
+        ],
+        "description": "Adds then and catch to a Promise"
+    },
+    "Describe block": {
+        "prefix": "desc",
+        "body": [
+            "describe('${1:description}', () => {",
+            "  ${2:// tests here}",
+            "});"
+        ],
+        "description": "Creates a describe block"
+    },
+    "Test/It block": {
+        "prefix": "test",
+        "body": [
+            "it('${1:should do something}', () => {",
+            "  ${2:// test code here}",
+            "});"
+        ],
+        "description": "Creates an individual test block"
+    },
+    "beforeEach hook": {
+        "prefix": "beforeeach",
+        "body": [
+            "beforeEach(() => {",
+            "  ${1:// setup code here}",
+            "});"
+        ],
+        "description": "Setup code before each test"
+    },
+    "afterEach hook": {
+        "prefix": "aftereach",
+        "body": [
+            "afterEach(() => {",
+            "  ${1:// teardown code here}",
+            "});"
+        ],
+        "description": "Teardown code after each test"
+    },
+    "beforeAll hook": {
+        "prefix": "beforeall",
+        "body": [
+            "beforeAll(() => {",
+            "  ${1:// setup code before all tests}",
+            "});"
+        ],
+        "description": "Setup code before all tests"
+    },
+    "afterAll hook": {
+        "prefix": "afterall",
+        "body": [
+            "afterAll(() => {",
+            "  ${1:// teardown code after all tests}",
+            "});"
+        ],
+        "description": "Teardown code after all tests"
+    },
+    "Navigate to URL": {
+        "prefix": "goto",
+        "body": [
+            "await page.goto('${1:https://example.com}');"
+        ],
+        "description": "Navigates to a URL"
+    },
+    "Locator element": {
+        "prefix": "locator",
+        "body": [
+            "const ${1:element} = page.locator('${2:selector}');"
+        ],
+        "description": "Selects an element using locator"
+    },
+    "Click element": {
+        "prefix": "click",
+        "body": [
+            "await page.locator('${1:selector}').click();"
+        ],
+        "description": "Clicks on an element"
+    },
+    "Fill input": {
+        "prefix": "fill",
+        "body": [
+            "await page.locator('${1:selector}').fill('${2:value}');"
+        ],
+        "description": "Fills input with a value"
+    },
+    "Expect assertion": {
+        "prefix": "expect",
+        "body": [
+            "await expect(page.locator('${1:selector}')).toHaveText('${2:expected}');"
+        ],
+        "description": "Asserts that element has expected text"
+    }
+}
